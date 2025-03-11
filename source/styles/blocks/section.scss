@@ -1,0 +1,86 @@
+.section {
+  display: flex;
+
+  & picture {
+    display: contents;
+  }
+}
+
+.section__wrap {
+  padding: 140px 120px 140px 150px;
+}
+
+.section__title {
+  font-family: $font-second;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.2;
+
+  margin: 0;
+  padding: 0;
+}
+
+.section__subtitle {
+  color: $text-second-color;
+  font-weight: 800;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+
+  &::before {
+    content: "";
+    width: 72px;
+    height: 2px;
+    background-color: $text-second-color;
+  }
+}
+
+.section__text {
+  font-size: 18px;
+  font-family: $font-primary;
+  font-weight: 700;
+}
+
+.section__image {
+  width: 566px;
+  flex-shrink: 0;
+}
+
+.section__image-left {
+  order: -1;
+}
+
+.section__button {
+  font-size: 18px;
+  font-family: $font-primary;
+  font-weight: 700;
+  color: $text-second-color;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &::after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../../icons/stack.svg#arrow-left");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 24px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

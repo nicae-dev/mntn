@@ -1,0 +1,50 @@
+
+.contacts {
+  display: flex;
+  align-items: center;
+  // justify-items: flex-start;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.contacts__title {
+  font-family: $font-primary;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  writing-mode: vertical-rl;
+}
+
+.contacts__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.contacts__icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    transition: background-color $time;
+  }
+}
+
+.contacts__icon--insta {
+  background-image: url("../../icons/stack.svg#instagram");
+}
+
+.contacts__icon--twitter {
+  background-image: url("../../icons/stack.svg#twitter");
+}
