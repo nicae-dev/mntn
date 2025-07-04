@@ -20,7 +20,7 @@
   position: relative;
 
   &::before {
-    content: "0"counter(marker);
+    content: "0" counter(marker);
     position: absolute;
     top: 40px;
     left: 0;
@@ -35,7 +35,4 @@
       content: counter(marker);
     }
   }
-
-
-
 }
