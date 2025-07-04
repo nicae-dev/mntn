@@ -1,0 +1,33 @@
+.hero-bg {
+    width: 100%;
+    height: 1900px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;  
+}
+
+.hero-bg__image {
+    position: absolute;
+    left: 0;
+}
+
+.hero-bg__image--first{
+    top: 0;
+
+}
+.hero-bg__image--second{
+    top: 0;
+
+}
+.hero-bg__image--third{
+    bottom: 13px;
+
+}
+.hero-bg__image--forth{
+    bottom: 204px;
+}
+.hero-bg__image--fifth{
+    bottom: 0;
+
+}

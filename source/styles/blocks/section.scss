@@ -1,5 +1,6 @@
 .section {
   display: flex;
+  gap: 55px;
 
   & picture {
     display: contents;
@@ -7,7 +8,7 @@
 }
 
 .section__wrap {
-  padding: 140px 120px 140px 150px;
+  padding: 140px 0 140px 150px;
 }
 
 .section__title {
@@ -28,6 +29,7 @@
   align-items: center;
   gap: 24px;
   margin: 0;
+  margin-bottom: 27px;
   padding: 0;
   text-transform: uppercase;
   letter-spacing: 6px;

@@ -12,26 +12,30 @@
   min-height: 720px;
   margin: 0 auto;
   position: relative;
+
 }
 
 .guide__number {
   counter-increment: marker 1;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto;
+  position: relative;
 
   &::before {
-    content: counter(marker);
+    content: "0"counter(marker);
     position: absolute;
     top: 40px;
     left: 0;
     font-family: $font-primary;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 240px;
     line-height: 1em;
     color: $text-color;
     opacity: 0.1;
-    grid-column: 1;
-    grid-row: 1;
+
+    .guide__item:nth-child(n+9) & {
+      content: counter(marker);
+    }
   }
+
+
+
 }

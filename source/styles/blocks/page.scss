@@ -1,8 +1,72 @@
 .page__body {
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: $font-primary;
   font-size: 18px;
   line-height: 1.8;
   color: #ffffff;
   background-color: #0b1d26;
-  padding: 80px;
+}
+
+/*
+.page__body--index {
+  background-image:
+  url("../../images/hero-bg5@1x.webp"),
+  url("../../images/hero-bg4@1x.webp"),
+  url("../../images/hero-bg3@1x.webp"),
+  url("../../images/hero-bg2@1x.webp"),
+  url("../../images/hero-bg1@1x.webp")
+    ;
+    background-repeat: no-repeat;
+    background-size: $page-width 1900px;
+    background-position: top center;
+}
+*/
+/*
+@mixin catalog-extra-bg-image($device) {
+  $image: "../../images/promotion_cat_background-"+$device;
+  background-color: rgba($bg-secondary-color, 0.85);
+  background-image:
+    linear-gradient(rgba($bg-secondary-color, 0.85), rgba($bg-secondary-color, 0.85)),
+    image-set(
+      url($image+"@1x.webp") type("image/webp") 1x,
+      url($image+"@2x.webp") type("image/webp") 2x,
+      url($image+"@1x.jpg") type("image/jpeg") 1x,
+      url($image+"@2x.jpg") type("image/jpeg") 2x
+    );
+}
+
+*/
+
+
+.page__nav {
+  box-sizing: border-box;
+  // position: fixed;
+  // right: 0;
+}
+
+.page__nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.page__nav-link {
+  text-decoration: none;
+  text-align: right;
+  color: $text-color;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: $font-primary;
+
+  display: block;
+  padding: 20px 32px;
+}
+
+.page__nav-item {
+  border-right: 2px solid rgba($text-color, 0.5);
+  /*todo*/
+}
+
+.page__nav-item--active {
+  border-right: 2px solid $text-color;
 }

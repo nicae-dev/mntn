@@ -1,3 +1,5 @@
 @include font-face("Gilroy", url("../../fonts/Gilroy-Regular.woff") format("woff"));
-@include font-face("Gilroy", url("../../fonts/Gilroy-bold.woff") format("woff"), 700);
+@include font-face("Gilroy", url("../../fonts/Gilroy-Bold.woff") format("woff"), 700);
+@include font-face("Gilroy", url("../../fonts/Gilroy-SemiBold.woff") format("woff"), 600);
+// @include font-face("Gilroy", url("../../fonts/Gilroy-Medium.woff") format("woff"), 500);
 @include font-face("Chronicle Display", url("../../fonts/Chronicle-Display-Roman.woff") format("woff"));

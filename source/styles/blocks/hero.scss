@@ -1,4 +1,49 @@
 .hero {
+  padding-top: 165px;
+  min-height: 1320px;
+  padding-bottom: 50px;
+}
+
+.hero__text {
   width: 950px;
   display: block;
+  text-transform: capitalize;
+}
+
+.hero__slogan {
+  margin: 0;
+  font-family: $font-second;
+  font-size: 88px;
+  font-weight: 600;
+  line-height: 1.1em;
+  margin-bottom: 32px;
+}
+
+.hero__subtitle{
+  margin-bottom: 32px;
+}
+
+.hero__button {
+  color: $text-color;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &::after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 22px;
+    background-image: url("../../icons/stack.svg#arrow-down");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 24px;
+  }
+}
+
+.hero__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
 }
