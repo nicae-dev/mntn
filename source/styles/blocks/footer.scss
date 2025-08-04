@@ -1,50 +1,52 @@
 .footer {
-    width: 1460px;
-    margin: 0 auto;
-    color: $text-color;
-    display: flex;
-    gap: 210px;
+  width: 1460px;
+  margin: 0 auto;
+  color: $text-color;
+  display: flex;
+  gap: 210px;
 }
 
 .footer__text {
-    font-size: 18px;
-    font-family: $font-primary;
+  font-size: 18px;
+  font-family: $font-primary;
 }
 
 .footer__title {
-    margin: 0;
-    margin-bottom: 22px;
-    color: $text-second-color;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
+  margin: 0;
+  margin-bottom: 22px;
+  color: $text-second-color;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .footer__menu {
-    list-style-type: none;
-    display: grid;
-    gap: 16px;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__menu-item {
-    color: $text-color;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 32px;
+  color: $text-color;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
 }
 
 .footer__logo-section {
-    margin-right: auto;
-    display: flex;flex-direction: column;
-    gap:10px;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
+
 .footer__copyright {
-    margin: 0;
-    margin-top: auto;
-    opacity: 0.5;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 32px;
+  margin: 0;
+  margin-top: auto;
+  opacity: 0.5;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
 }

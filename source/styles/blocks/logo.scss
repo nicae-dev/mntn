@@ -1,25 +1,25 @@
 .logo {
-    color: $text-color;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 18px;
+  color: $text-color;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
 
-    &:hover {
-        opacity: 0.7;
-    }
+  &:hover {
+    opacity: 0.7;
+  }
 
-    &:active {
-        opacity: 0.6;
-    }
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .logo__name {
-    display: block;
-    margin: 0;
-    padding: 0;
-    color: $text-color;
-    font-family: $font-second;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 32px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+  font-family: $font-second;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
 }
