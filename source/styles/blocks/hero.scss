@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 165px;
+  padding-top: 175px;
   min-height: 1320px;
   padding-bottom: 50px;
 }
@@ -43,7 +43,8 @@
 }
 
 .hero__wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 120px auto 100px;
   justify-content: space-between;
-  align-items: top;
+  align-items: center;
 }
