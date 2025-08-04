@@ -1,9 +1,10 @@
 .guide {
   list-style-type: none;
   margin: 0;
+  margin-bottom: 200px;
   padding: 0;
   display: grid;
-  gap: 200px;
+  gap: 190px;
   counter-reset: marker 0;
 }
 

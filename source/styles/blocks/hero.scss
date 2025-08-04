@@ -7,7 +7,6 @@
 .hero__text {
   width: 950px;
   display: block;
-  text-transform: capitalize;
 }
 
 .hero__slogan {
@@ -16,6 +15,7 @@
   font-size: 88px;
   font-weight: 600;
   line-height: 1.1em;
+  text-transform: capitalize;
   margin-bottom: 32px;
 }
 
