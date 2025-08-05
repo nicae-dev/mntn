@@ -1,4 +1,3 @@
-
 .hero-contacts {
   display: flex;
   align-items: flex-start;
@@ -10,6 +9,7 @@
   font-family: $font-primary;
   font-size: 18px;
   font-weight: 700;
+  line-height: 18px;
   margin: 0;
   writing-mode: vertical-rl;
 }
@@ -33,17 +33,27 @@
     content: "";
     width: 20px;
     height: 20px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
+    background-color: $text-color;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 20px 20px;
     transition: background-color $time;
+  }
+
+  &:hover::before,
+  &:focus-visible::before {
+    background-color: $text-second-color;
+  }
+
+  &:active::before {
+    background-color: $text-second-color;
   }
 }
 
 .hero-contacts__icon--insta {
-  background-image: url("../../icons/stack.svg#instagram");
+  mask-image: url("../../icons/stack.svg#instagram");
 }
 
 .hero-contacts__icon--twitter {
-  background-image: url("../../icons/stack.svg#twitter");
+  mask-image: url("../../icons/stack.svg#twitter");
 }

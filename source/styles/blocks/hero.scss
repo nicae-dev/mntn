@@ -1,6 +1,8 @@
 .hero {
   padding-top: 175px;
   min-height: 1320px;
+  max-height: 1900px;
+  height: 100vh;
   padding-bottom: 50px;
 }
 
@@ -25,6 +27,9 @@
 
 .hero__button {
   color: $text-color;
+  font-weight: 700;
+  font-family: $font-primary;
+  font-size: 18px;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -35,10 +40,18 @@
     content: "";
     width: 20px;
     height: 22px;
-    background-image: url("../../icons/stack.svg#arrow-down");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 16px 24px;
+    background-color: $text-color;
+    mask-image: url("../../icons/stack.svg#arrow-down");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 16px 24px;
+    transition: background-color $time;
+  }
+
+  &:hover::after,
+  &:focus-visible::after,
+  &:active::after {
+    background-color: $text-second-color;
   }
 }
 

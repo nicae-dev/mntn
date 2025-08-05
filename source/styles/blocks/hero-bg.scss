@@ -1,10 +1,38 @@
 .hero-bg {
   width: 100%;
-  height: 1900px;
+  // height: 1900px;
+  height: calc(100vh + 460px);
+  min-height: 1900px;
+  max-height: 2200px;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
+
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1200px;
+    background-image: linear-gradient($bg-basic-color, transparent);
+    z-index: 2;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 700px;
+    background-image: linear-gradient(transparent 0, $bg-basic-color 70%);
+    z-index: 2;
+  }
 }
 
 .hero-bg__image {
@@ -16,18 +44,10 @@
   top: 0;
 }
 
-.hero-bg__image--second {
-  top: 0;
-}
-
 .hero-bg__image--third {
   bottom: 13px;
 }
 
 .hero-bg__image--forth {
   bottom: 204px;
-}
-
-.hero-bg__image--fifth {
-  bottom: 0;
 }
