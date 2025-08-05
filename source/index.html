@@ -33,10 +33,10 @@
 
     <main class="main-container">
       <div class="hero">
-        <div class="hero-bg ">
-          <img class="hero-bg__image hero-bg__image--first" src="images/hero-background1@1x.png" srcset="images/hero-background1@2x.png 2x" width="1920" height="1113" alt="небо, облака" loading="lazy">
-          <img class="hero-bg__image hero-bg__image--second" src="images/hero-background2@1x.png" srcset="images/hero-background2@2x.png 2x" width="1920" height="1113" alt="горы вдалеке" loading="lazy">
-          <img class="hero-bg__image hero-bg__image--third" src="images/hero-background3@1x.png" srcset="images/hero-background3@2x.png 2x" width="1920" height="1113" alt="зеленый холм с человеком" loading="lazy">
+        <div class="hero-bg parallax">
+          <img class="hero-bg__image hero-bg__image--first parallax-layer parallax-image1" src="images/hero-background1@1x.png" srcset="images/hero-background1@2x.png 2x" width="1920" height="1113" alt="небо, облака" loading="lazy">
+          <img class="hero-bg__image hero-bg__image--second parallax-layer parallax-image2" src="images/hero-background2@1x.png" srcset="images/hero-background2@2x.png 2x" width="1920" height="1113" alt="горы вдалеке" loading="lazy">
+          <img class="hero-bg__image hero-bg__image--third parallax-layer parallax-image3" src="images/hero-background3@1x.png" srcset="images/hero-background3@2x.png 2x" width="1920" height="1113" alt="зеленый холм с человеком" loading="lazy">
         </div>
         <div class="hero__wrapper">
           <section class="hero-contacts">
@@ -54,16 +54,16 @@
           <aside class="page__nav">
             <ul class="page__nav-list">
               <li class="page__nav-item page__nav-item--active"><a class="page__nav-link" href="#">Start</a></li>
-              <li class="page__nav-item"><a class="page__nav-link link" href="#">01</a></li>
-              <li class="page__nav-item"><a class="page__nav-link link" href="#">02</a></li>
-              <li class="page__nav-item"><a class="page__nav-link link" href="#">03</a></li>
+              <li class="page__nav-item"><a class="page__nav-link link" href="#guide01">01</a></li>
+              <li class="page__nav-item"><a class="page__nav-link link" href="#guide02">02</a></li>
+              <li class="page__nav-item"><a class="page__nav-link link" href="#guide03">03</a></li>
             </ul>
           </aside>
         </div>
       </div>
 
       <ol class="guide" id="guide">
-        <li class="guide__item">
+        <li class="guide__item" id="guide01">
           <section class="section">
 
             <div class="section__wrap guide__number">
@@ -85,8 +85,7 @@
             </picture>
           </section>
         </li>
-        <li class="guide__item">
-
+        <li class="guide__item" id="guide02">
           <section class="section">
 
             <div class="section__wrap guide__number">
@@ -106,9 +105,8 @@
             </picture>
           </section>
         </li>
-        <li class="guide__item">
+        <li class="guide__item" id="guide03">
           <section class="section">
-
             <div class="section__wrap guide__number">
               <h2 class="section__subtitle">where you go is the key</h2>
               <p class="section__title">Understand Your <br>Map & Timing</p>

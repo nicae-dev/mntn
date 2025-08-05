@@ -1,7 +1,6 @@
 .hero-bg {
   width: 100%;
-  // height: 1900px;
-  height: calc(100vh + 460px);
+  height: calc(100vh + 410px);
   min-height: 1900px;
   max-height: 2200px;
   position: absolute;
@@ -51,3 +50,26 @@
 .hero-bg__image--third {
   bottom: 204px;
 }
+//для паралакса важна высота 100% и прокрутка
+/*
+.parallax {
+  position: relative;
+  perspective: 1px;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.parallax-layer {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+}
+
+.parallax-image1 {
+  transform: translateZ(0);
+}
+
+.parallax-image2 {
+  transform: translateZ(-1px);
+} */
