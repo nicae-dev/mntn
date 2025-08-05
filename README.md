@@ -1,9 +1,9 @@
 # Проект MNTN
 ## Описание
-*Реализация макета одностраничного сайта с Figma: [MNTN - Landing Page](https://www.figma.com/community/file/788675347108478517/mntn-landing-page) или этот макет в [формате JPEG](maket.jpg)
-*Так как не описано поведение при прокрутке страницы, частично ориентировалась на [реализацию от автора макета](https://mntn.krystonschwarze.com)
-*Исходный код в [папке source](source)
-*Live-версия на [github-pages](https://nicae-dev.github.io/mntn)
+* Реализация макета одностраничного сайта с Figma: [MNTN - Landing Page](https://www.figma.com/community/file/788675347108478517/mntn-landing-page) или этот макет в [формате JPEG](maket.jpg)
+* Так как не описано поведение при прокрутке страницы, частично ориентировалась на [реализацию от автора макета](https://mntn.krystonschwarze.com)
+* Исходный код в [папке source](source)
+* Live-версия на [github-pages](https://nicae-dev.github.io/mntn)
 
 ## Особенности:
 * Одностраничный сайт
