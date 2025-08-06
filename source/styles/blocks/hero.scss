@@ -25,6 +25,23 @@
   margin-bottom: 32px;
 }
 
+@keyframes arrow-down-scrolling {
+  0% {
+    transform: translateY(0);
+    transform-origin: top;
+  }
+
+  50% {
+    transform: translateY(5px);
+    transform-origin: top;
+  }
+
+  100% {
+    transform: translateY(0);
+    transform-origin: top;
+  }
+}
+
 .hero__button {
   color: $text-color;
   font-weight: 700;
@@ -35,7 +52,10 @@
   align-items: center;
   gap: 10px;
 
+
   &::after {
+    @include smooth-icon-for-element();
+
     display: block;
     content: "";
     width: 20px;
@@ -45,13 +65,18 @@
     mask-position: center;
     mask-repeat: no-repeat;
     mask-size: 16px 24px;
-    transition: background-color $time;
+    animation: arrow-down-scrolling 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-timing-function: cubic-bezier(0.42, 0, 1, 0.5, 1);
+    animation-play-state: running;
   }
 
   &:hover::after,
   &:focus-visible::after,
   &:active::after {
-    background-color: $text-second-color;
+    @include smooth-icon-for-states();
+    animation-play-state: paused;
   }
 }
 

@@ -15,9 +15,12 @@
 .header__menu-item {
   display: block;
   margin: 0;
-  padding: 10px;
   color: $text-color;
   font-family: $font-primary;
+}
+
+.header__menu-link {
+  padding: 10px;
 }
 
 .header__menu-item--logo {

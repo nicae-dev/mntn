@@ -1,13 +1,18 @@
 .link {
-  color: $text-color;
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
-  transition: color $time;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient($text-second-color 45%, $text-color 60%);
+  background-clip: text;
+  background-position-y: 100%;
+  background-size: 100% 250%;
+
+  transition: background-position-y $time ease-in;
 
   &:hover,
   &:focus-visible {
-    color: $text-second-color;
+    background-position-y: 0;
   }
 
   &:active {
@@ -21,6 +26,8 @@
   gap: 10px;
 
   &::before {
+    @include smooth-icon-for-element();
+
     display: block;
     content: "";
     width: 20px;
@@ -30,15 +37,11 @@
     mask-position: center;
     mask-repeat: no-repeat;
     mask-size: 20px 20px;
-    transition: background-color $time;
   }
 
   &:hover::before,
-  &:focus-visible::before {
-    background-color: $text-second-color;
-  }
-
+  &:focus-visible::before,
   &:active::before {
-    background-color: $text-second-color;
+    @include smooth-icon-for-states();
   }
 }

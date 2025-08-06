@@ -7,3 +7,14 @@
     src: $font-src;
   }
 }
+
+@mixin smooth-icon-for-element() {
+  background-image: linear-gradient($text-second-color 45%, $text-color 60%);
+  background-position-y: 100%;
+  background-size: 100% 250%;
+  transition: background-position-y $time ease-in;
+}
+
+@mixin smooth-icon-for-states() {
+  background-position-y: 0;
+}
