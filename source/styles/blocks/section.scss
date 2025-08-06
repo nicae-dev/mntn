@@ -17,6 +17,16 @@
   padding: 0;
 }
 
+@keyframes subtitle-line-show {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 72px;
+  }
+}
+
 .section__subtitle {
   color: $text-second-color;
   font-weight: 800;
@@ -36,6 +46,10 @@
     height: 2px;
     background-color: $text-second-color;
   }
+}
+
+.section__subtitle--smooth-show::before {
+  animation: subtitle-line-show 2s;
 }
 
 .section__text {

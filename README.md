@@ -13,9 +13,10 @@
 * Для конвертации SCSS в CSS используется сборка на gulp 4 версии от HTML Academy
 
 ## Технологии
-* HTML
+* HTML5
 * SCSS
 * БЭМ
+* JS, [Intersection Observer API](https://developer.mozilla.org/ru/docs/Web/API/Intersection_Observer_API)
 
 ## Планируется
 * Сделать паралакс ([пример](https://htmlacademy.ru/blog/css/parallax))
