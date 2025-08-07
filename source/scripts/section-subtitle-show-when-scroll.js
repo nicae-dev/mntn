@@ -1,4 +1,4 @@
-const observer = new IntersectionObserver((entries) => {
+const sectionSubtitleObserver = new IntersectionObserver((entries) => {
   // перебор записей
   entries.forEach((entry) => {
     // если элемент появился
@@ -9,4 +9,4 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 const elements = document.querySelectorAll('.section__subtitle');
-elements.forEach((element)=>observer.observe(element));
+elements.forEach((element)=>sectionSubtitleObserver.observe(element));
