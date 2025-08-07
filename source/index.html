@@ -15,7 +15,7 @@
 
 <body class="page__body page__body--index">
   <div class="container container--index parallax">
-    <header class="header">
+    <header class="header container__element">
       <nav class="header__nav">
         <ul class="header__menu">
           <li class="header__menu-item header__menu-item--logo"><a class="logo" href="index.html">
@@ -30,14 +30,14 @@
       </nav>
     </header>
 
-    <section class="hero-contacts">
-      <h2 class="hero-contacts__title">Follow us</h2>
-      <ul class="hero-contacts__list">
-        <li class="hero-contacts__item"><a class="hero-contacts__icon hero-contacts__icon--insta" href="#!"><span class="visually-hidden">Instagram</span></a></li>
-        <li class="hero-contacts__item"><a class="hero-contacts__icon hero-contacts__icon--twitter" href="#!"><span class="visually-hidden">Twitter</span></a></li>
+    <section class="aside-contacts container__element">
+      <h2 class="aside-contacts__title">Follow us</h2>
+      <ul class="aside-contacts__list">
+        <li class="aside-contacts__item"><a class="aside-contacts__icon aside-contacts__icon--insta" href="#!"><span class="visually-hidden">Instagram</span></a></li>
+        <li class="aside-contacts__item"><a class="aside-contacts__icon aside-contacts__icon--twitter" href="#!"><span class="visually-hidden">Twitter</span></a></li>
       </ul>
     </section>
-    <aside class="page__nav">
+    <aside class="page__nav container__element">
       <ul class="page__nav-list">
         <li class="page__nav-item page__nav-item--active"><a class="page__nav-link" href="#!">Start</a></li>
         <li class="page__nav-item"><a class="page__nav-link link" href="#guide01">01</a></li>
@@ -45,130 +45,121 @@
         <li class="page__nav-item"><a class="page__nav-link link" href="#guide03">03</a></li>
       </ul>
     </aside>
-    <div class="parallax__group hero-bg">
-      <div class="parallax-layer  parallax-layer1">
-        <img class="hero-bg__image hero-bg__image--first " src="images/hero-background1@1x.png" srcset="images/hero-background1@2x.png 2x" width="1920" height="1113" alt="небо, облака" loading="lazy">
+    <div class="parallax__group hero">
+      <div class="parallax__layer parallax__layer--1">
+        <img class="hero__image hero__image--first " src="images/hero-background1@1x.png" srcset="images/hero-background1@2x.png 2x" width="1920" height="1113" alt="небо, облака" loading="lazy">
       </div>
-      <div class="parallax-layer  parallax-layer2">
-        <img class="hero-bg__image hero-bg__image--second" src="images/hero-background2@1x.png" srcset="images/hero-background2@2x.png 2x" width="1920" height="1113" alt="горы вдалеке" loading="lazy">
+      <div class="parallax__layer parallax__layer--2">
+        <img class="hero__image hero__image--second" src="images/hero-background2@1x.png" srcset="images/hero-background2@2x.png 2x" width="1920" height="1113" alt="горы вдалеке" loading="lazy">
       </div>
-      <div class="parallax-layer parallax-layer3">
+      <div class="parallax__layer parallax__layer--3 hero__wrapper">
         <section class="hero__text section">
           <h2 class="section__subtitle hero__subtitle">A Hiking guide</h2>
           <p class="hero__slogan">Be prepared for the Mountains and beyond!</p>
           <a class="hero__button link" href="#guide">scroll down</a>
         </section>
       </div>
-      <div class="parallax-layer parallax-layer4">
-        <img class="hero-bg__image hero-bg__image--third" src="images/hero-background3@1x.png" srcset="images/hero-background3@2x.png 2x" width="1920" height="1113" alt="зеленый холм с человеком" loading="lazy">
+      <div class="parallax__layer parallax__layer--4">
+        <img class="hero__image hero__image--third" src="images/hero-background3@1x.png" srcset="images/hero-background3@2x.png 2x" width="1920" height="1113" alt="зеленый холм с человеком" loading="lazy">
+      </div>
+      <div class="parallax__layer parallax__layer--last">
+        <div class="hero__image--last"></div>
       </div>
     </div>
-    <main class="main-container">
-      <!-- <div class="hero-bg"> -->
+    <div class="parallax__group parallax__group--main" style="margin-top: 100vh;">
+      <main class="container__element page__main-index">
+        <ol class="guide" id="guide">
+          <li class="guide__item" id="guide01">
+            <section class="section">
 
-      <!-- <div class="hero">
-          <div class="hero__wrapper">
-            <section class="hero__text section">
-              <h2 class="section__subtitle hero__subtitle">A Hiking guide</h2>
-              <p class="hero__slogan">Be prepared for the Mountains and beyond!</p>
-              <a class="hero__button link" href="#guide">scroll down</a>
+              <div class="section__wrap guide__number">
+                <h2 class="section__subtitle">Get Started</h2>
+                <p class="section__title">What level of hiker <br>are you?</p>
+                <p class="section__text">Determining what level of hiker you are can be an important tool when planning
+                  future hikes. This hiking level guide will help you plan hikes according to different hike ratings set
+                  by
+                  various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate,
+                  advanced
+                  moderate, expert, or expert backpacker?</p>
+                <a class="section__button" href="#!">read more</a>
+              </div>
+
+              <picture class="section__image">
+                <source type="image/webp" srcset="images/01@1x.webp 1x, images/01@2x.webp 2x" width="566" height="720">
+
+                <img src="images/01@1x.png" srcset="images/01@2x.png 2x" width="566" height="720" alt="man on mountain" loading="lazy">
+              </picture>
             </section>
-          </div>
-        </div> -->
-      <!-- </div> -->
+          </li>
+          <li class="guide__item" id="guide02">
+            <section class="section">
 
-      <ol class="guide" id="guide" style="margin-top:100vh;">
-        <li class="guide__item" id="guide01">
-          <section class="section">
+              <div class="section__wrap guide__number">
+                <h2 class="section__subtitle">Hiking Essentials</h2>
+                <p class="section__title">Picking the right Hiking Gear!</p>
+                <p class="section__text">The nice thing about beginning hiking is that you don’t really need any special
+                  gear, you can probably get away with things you already have.
+                  Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes,
+                  which will get heavy and chafe wif they get sweaty or wet.</p>
+                <a class="section__button" href="#!">read more</a>
+              </div>
 
-            <div class="section__wrap guide__number">
-              <h2 class="section__subtitle">Get Started</h2>
-              <p class="section__title">What level of hiker <br>are you?</p>
-              <p class="section__text">Determining what level of hiker you are can be an important tool when planning
-                future hikes. This hiking level guide will help you plan hikes according to different hike ratings set
-                by
-                various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate,
-                advanced
-                moderate, expert, or expert backpacker?</p>
-              <a class="section__button" href="#!">read more</a>
-            </div>
+              <picture class="section__image section__image-left">
+                <source type="image/webp" srcset="images/02@1x.webp 1x, images/02@2x.webp 2x" width="566" height="720">
 
-            <picture class="section__image">
-              <source type="image/webp" srcset="images/01@1x.webp 1x, images/01@2x.webp 2x" width="566" height="720">
+                <img src="images/02@1x.png" srcset="images/02@2x.png 2x" width="566" height="720" alt="man on mountain" loading="lazy">
+              </picture>
+            </section>
+          </li>
+          <li class="guide__item" id="guide03">
+            <section class="section">
+              <div class="section__wrap guide__number">
+                <h2 class="section__subtitle">where you go is the key</h2>
+                <p class="section__title">Understand Your <br>Map & Timing</p>
+                <p class="section__text">To start, print out the hiking guide and map. If it’s raining, throw them in a
+                  Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know
+                  what my next landmark is as I hike. For example, I’ll read the guide and know that say, in a mile, I
+                  make
+                  a right turn at the junction..</p>
+                <a class="section__button" href="#!">read more</a>
+              </div>
+              <picture class="section__image">
+                <source type="image/webp" srcset="images/03@1x.webp 1x, images/03@2x.webp 2x" width="566" height="720">
 
-              <img src="images/01@1x.png" srcset="images/01@2x.png 2x" width="566" height="720" alt="man on mountain" loading="lazy">
-            </picture>
-          </section>
-        </li>
-        <li class="guide__item" id="guide02">
-          <section class="section">
-
-            <div class="section__wrap guide__number">
-              <h2 class="section__subtitle">Hiking Essentials</h2>
-              <p class="section__title">Picking the right Hiking Gear!</p>
-              <p class="section__text">The nice thing about beginning hiking is that you don’t really need any special
-                gear, you can probably get away with things you already have.
-                Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes,
-                which will get heavy and chafe wif they get sweaty or wet.</p>
-              <a class="section__button" href="#!">read more</a>
-            </div>
-
-            <picture class="section__image section__image-left">
-              <source type="image/webp" srcset="images/02@1x.webp 1x, images/02@2x.webp 2x" width="566" height="720">
-
-              <img src="images/02@1x.png" srcset="images/02@2x.png 2x" width="566" height="720" alt="man on mountain" loading="lazy">
-            </picture>
-          </section>
-        </li>
-        <li class="guide__item" id="guide03">
-          <section class="section">
-            <div class="section__wrap guide__number">
-              <h2 class="section__subtitle">where you go is the key</h2>
-              <p class="section__title">Understand Your <br>Map & Timing</p>
-              <p class="section__text">To start, print out the hiking guide and map. If it’s raining, throw them in a
-                Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know
-                what my next landmark is as I hike. For example, I’ll read the guide and know that say, in a mile, I
-                make
-                a right turn at the junction..</p>
-              <a class="section__button" href="#!">read more</a>
-            </div>
-            <picture class="section__image">
-              <source type="image/webp" srcset="images/03@1x.webp 1x, images/03@2x.webp 2x" width="566" height="720">
-
-              <img src="images/03@1x.png" srcset="images/03@2x.png 2x" width="566" height="720" alt="man on mountain" loading="lazy">
-            </picture>
-          </section>
-        </li>
-      </ol>
-    </main>
-
-    <footer class="footer">
-      <section class="footer__logo-section">
-        <a class="footer__logo logo" href="index.html">
-          <h2 class="logo__name">MNTN</h2>
-        </a>
-        <p class="footer__text">Get out there & discover your next <br>slope, mountain & destination!</p>
-        <p class="footer__copyright">Copyright 2023 MNTN, Inc. Terms & Privacy</p>
-      </section>
-      <section>
-        <h2 class="footer__title">More on The Blog</h2>
-        <ul class="footer__menu">
-          <li class="footer__menu-item"><a class="link" href="#!">About MNTN</a></li>
-          <li class="footer__menu-item"><a class="link" href="#!">Contributors & Writers</a></li>
-          <li class="footer__menu-item"><a class="link" href="#!">Write For Us</a></li>
-          <li class="footer__menu-item"><a class="link" href="#!">Contact Us</a></li>
-          <li class="footer__menu-item"><a class="link" href="#!">Privacy Policy</a></li>
-        </ul>
-      </section>
-      <section>
-        <h2 class="footer__title">More on MNTN</h2>
-        <ul class="footer__menu">
-          <li class="footer__menu-item"><a class="link" href="#!">The Team</a></li>
-          <li class="footer__menu-item"><a class="link" href="#!">Jobs</a></li>
-          <li class="footer__menu-item"><a class="link" href="#!">Press</a></li>
-        </ul>
-      </section>
-    </footer>
+                <img src="images/03@1x.png" srcset="images/03@2x.png 2x" width="566" height="720" alt="man on mountain" loading="lazy">
+              </picture>
+            </section>
+          </li>
+        </ol>
+      </main>
+      <footer class="footer">
+        <section class="footer__logo-section">
+          <a class="footer__logo logo" href="index.html">
+            <h2 class="logo__name">MNTN</h2>
+          </a>
+          <p class="footer__text">Get out there & discover your next <br>slope, mountain & destination!</p>
+          <p class="footer__copyright">Copyright 2023 MNTN, Inc. Terms & Privacy</p>
+        </section>
+        <section>
+          <h2 class="footer__title">More on The Blog</h2>
+          <ul class="footer__menu">
+            <li class="footer__menu-item"><a class="link" href="#!">About MNTN</a></li>
+            <li class="footer__menu-item"><a class="link" href="#!">Contributors & Writers</a></li>
+            <li class="footer__menu-item"><a class="link" href="#!">Write For Us</a></li>
+            <li class="footer__menu-item"><a class="link" href="#!">Contact Us</a></li>
+            <li class="footer__menu-item"><a class="link" href="#!">Privacy Policy</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="footer__title">More on MNTN</h2>
+          <ul class="footer__menu">
+            <li class="footer__menu-item"><a class="link" href="#!">The Team</a></li>
+            <li class="footer__menu-item"><a class="link" href="#!">Jobs</a></li>
+            <li class="footer__menu-item"><a class="link" href="#!">Press</a></li>
+          </ul>
+        </section>
+      </footer>
+    </div>
 
   </div>
   <script src="scripts/section-subtitle-show-when-scroll.js"></script>

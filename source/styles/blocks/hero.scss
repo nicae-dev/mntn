@@ -1,10 +1,36 @@
-.hero {
-  padding-top: 175px;
-  min-height: 1270px;
-  max-height: 1900px;
-  height: 100vh;
-  padding-bottom: 50px;
+.hero::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1200px;
+  background-image: linear-gradient($bg-basic-color, transparent);
+  z-index: 3;
+}
+
+.hero__image {
+  position: absolute;
+  left: 0;
+}
+
+.hero__image--first {
+  top: 0;
+}
+
+.hero__image--second {
+  bottom: 0;
+}
+
+.hero__image--third {
+  bottom: 0;
+}
+
+.hero__image--last {
+  height: 100%;
   width: 100%;
+  background-image: linear-gradient(transparent, $bg-basic-color 350px 700px);
 }
 
 .hero__text {
@@ -83,6 +109,5 @@
 
 .hero__wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
 }

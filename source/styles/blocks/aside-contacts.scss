@@ -1,4 +1,4 @@
-.hero-contacts {
+.aside-contacts {
   width: fit-content;
   max-width: 100px;
   display: flex;
@@ -7,9 +7,10 @@
   gap: 26px;
   position: sticky;
   top: 360px;
+  z-index: 20;
 }
 
-.hero-contacts__title {
+.aside-contacts__title {
   font-family: $font-primary;
   font-size: 18px;
   font-weight: 700;
@@ -18,7 +19,7 @@
   writing-mode: vertical-rl;
 }
 
-.hero-contacts__list {
+.aside-contacts__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -27,7 +28,7 @@
   gap: 26px;
 }
 
-.hero-contacts__icon {
+.aside-contacts__icon {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -54,10 +55,10 @@
   }
 }
 
-.hero-contacts__icon--insta {
+.aside-contacts__icon--insta {
   mask-image: url("../../icons/stack.svg#instagram");
 }
 
-.hero-contacts__icon--twitter {
+.aside-contacts__icon--twitter {
   mask-image: url("../../icons/stack.svg#twitter");
 }
