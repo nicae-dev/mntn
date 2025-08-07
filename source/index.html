@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body page__body--index">
-  <div class="container container--index">
+  <div class="container container--index parallax">
     <header class="header">
       <nav class="header__nav">
         <ul class="header__menu">
@@ -30,38 +30,54 @@
       </nav>
     </header>
 
-    <main class="main-container">
-      <div class="hero">
-        <div class="hero-bg parallax">
-          <img class="hero-bg__image hero-bg__image--first parallax-layer parallax-image1" src="images/hero-background1@1x.png" srcset="images/hero-background1@2x.png 2x" width="1920" height="1113" alt="небо, облака" loading="lazy">
-          <img class="hero-bg__image hero-bg__image--second parallax-layer parallax-image2" src="images/hero-background2@1x.png" srcset="images/hero-background2@2x.png 2x" width="1920" height="1113" alt="горы вдалеке" loading="lazy">
-          <img class="hero-bg__image hero-bg__image--third parallax-layer parallax-image3" src="images/hero-background3@1x.png" srcset="images/hero-background3@2x.png 2x" width="1920" height="1113" alt="зеленый холм с человеком" loading="lazy">
-        </div>
-        <div class="hero__wrapper">
-          <section class="hero-contacts">
-            <h2 class="hero-contacts__title">Follow us</h2>
-            <ul class="hero-contacts__list">
-              <li class="hero-contacts__item"><a class="hero-contacts__icon hero-contacts__icon--insta" href="#!"><span class="visually-hidden">Instagram</span></a></li>
-              <li class="hero-contacts__item"><a class="hero-contacts__icon hero-contacts__icon--twitter" href="#!"><span class="visually-hidden">Twitter</span></a></li>
-            </ul>
-          </section>
-          <section class="hero__text section">
-            <h2 class="section__subtitle hero__subtitle">A Hiking guide</h2>
-            <p class="hero__slogan">Be prepared for the Mountains and beyond!</p>
-            <a class="hero__button link" href="#guide">scroll down</a>
-          </section>
-          <aside class="page__nav">
-            <ul class="page__nav-list">
-              <li class="page__nav-item page__nav-item--active"><a class="page__nav-link" href="#!">Start</a></li>
-              <li class="page__nav-item"><a class="page__nav-link link" href="#guide01">01</a></li>
-              <li class="page__nav-item"><a class="page__nav-link link" href="#guide02">02</a></li>
-              <li class="page__nav-item"><a class="page__nav-link link" href="#guide03">03</a></li>
-            </ul>
-          </aside>
-        </div>
+    <section class="hero-contacts">
+      <h2 class="hero-contacts__title">Follow us</h2>
+      <ul class="hero-contacts__list">
+        <li class="hero-contacts__item"><a class="hero-contacts__icon hero-contacts__icon--insta" href="#!"><span class="visually-hidden">Instagram</span></a></li>
+        <li class="hero-contacts__item"><a class="hero-contacts__icon hero-contacts__icon--twitter" href="#!"><span class="visually-hidden">Twitter</span></a></li>
+      </ul>
+    </section>
+    <aside class="page__nav">
+      <ul class="page__nav-list">
+        <li class="page__nav-item page__nav-item--active"><a class="page__nav-link" href="#!">Start</a></li>
+        <li class="page__nav-item"><a class="page__nav-link link" href="#guide01">01</a></li>
+        <li class="page__nav-item"><a class="page__nav-link link" href="#guide02">02</a></li>
+        <li class="page__nav-item"><a class="page__nav-link link" href="#guide03">03</a></li>
+      </ul>
+    </aside>
+    <div class="parallax__group hero-bg">
+      <div class="parallax-layer  parallax-layer1">
+        <img class="hero-bg__image hero-bg__image--first " src="images/hero-background1@1x.png" srcset="images/hero-background1@2x.png 2x" width="1920" height="1113" alt="небо, облака" loading="lazy">
       </div>
+      <div class="parallax-layer  parallax-layer2">
+        <img class="hero-bg__image hero-bg__image--second" src="images/hero-background2@1x.png" srcset="images/hero-background2@2x.png 2x" width="1920" height="1113" alt="горы вдалеке" loading="lazy">
+      </div>
+      <div class="parallax-layer parallax-layer3">
+        <section class="hero__text section">
+          <h2 class="section__subtitle hero__subtitle">A Hiking guide</h2>
+          <p class="hero__slogan">Be prepared for the Mountains and beyond!</p>
+          <a class="hero__button link" href="#guide">scroll down</a>
+        </section>
+      </div>
+      <div class="parallax-layer parallax-layer4">
+        <img class="hero-bg__image hero-bg__image--third" src="images/hero-background3@1x.png" srcset="images/hero-background3@2x.png 2x" width="1920" height="1113" alt="зеленый холм с человеком" loading="lazy">
+      </div>
+    </div>
+    <main class="main-container">
+      <!-- <div class="hero-bg"> -->
 
-      <ol class="guide" id="guide">
+      <!-- <div class="hero">
+          <div class="hero__wrapper">
+            <section class="hero__text section">
+              <h2 class="section__subtitle hero__subtitle">A Hiking guide</h2>
+              <p class="hero__slogan">Be prepared for the Mountains and beyond!</p>
+              <a class="hero__button link" href="#guide">scroll down</a>
+            </section>
+          </div>
+        </div> -->
+      <!-- </div> -->
+
+      <ol class="guide" id="guide" style="margin-top:100vh;">
         <li class="guide__item" id="guide01">
           <section class="section">
 

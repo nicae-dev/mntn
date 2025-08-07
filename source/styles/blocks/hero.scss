@@ -4,6 +4,7 @@
   max-height: 1900px;
   height: 100vh;
   padding-bottom: 50px;
+  width: 100%;
 }
 
 .hero__text {
@@ -81,8 +82,7 @@
 }
 
 .hero__wrapper {
-  display: grid;
-  grid-template-columns: 120px auto 100px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }

@@ -8,6 +8,11 @@
 
 .page__nav {
   box-sizing: border-box;
+  position: sticky;
+  top: 325px;
+  margin-left: auto;
+  width: fit-content;
+  max-width: 100px;
 }
 
 .page__nav-list {
