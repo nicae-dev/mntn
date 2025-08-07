@@ -1,4 +1,4 @@
-const smoothLinks = document.querySelectorAll('a[href^="#!"]');
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
 smoothLinks.forEach((smoothLink) => smoothLink.addEventListener('click', (e) => {
   e.preventDefault();
   const id = smoothLink.getAttribute('href');
