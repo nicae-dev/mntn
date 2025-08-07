@@ -1,0 +1,60 @@
+//для паралакса важна высота 100% и прокрутка по вертикали
+
+$paralax-perspective: 300px;
+
+@mixin paralax-transform($z, $x: 0, $y: 0) {
+  transform: translateZ($z) translateX($x) translateY($y) scale(calc(1.1 + ($z * -1) / $paralax-perspective));
+}
+
+.parallax {
+  height: 100vh;
+  overflow: hidden auto;
+  perspective: 300px;
+  scrollbar-width: none;
+}
+
+.parallax__container {
+  position: relative;
+  height: calc(100vh - 410px);
+}
+
+.parallax__group {
+  height: calc(100vh + 410px);
+  min-height: 1900px;
+  max-height: 2200px;
+  width: 100%;
+  transform-style: preserve-3d;
+  position: absolute;
+  inset: 0;
+}
+
+.parallax__layer {
+  position: absolute;
+  inset: 0;
+  transform-origin: top;
+}
+
+.parallax__layer--1 {
+  @include paralax-transform(-310px, 0, -1020px);
+  z-index: 1;
+}
+
+.parallax__layer--2 {
+  @include paralax-transform(-220px, 0, -563px);
+  z-index: 2;
+}
+/* TODO кнопка scroll down не кликабельна */
+.parallax__layer--3 {
+  transform: translateY(274px);
+  z-index: 3;
+}
+
+.parallax__layer--4 {
+  @include paralax-transform(80px, 0, 7px);
+  z-index: 4;
+}
+
+.parallax__layer--last {
+  @include paralax-transform(80px, 0, 1125px);
+  z-index: 9;
+}

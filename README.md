@@ -19,5 +19,5 @@
 * JS, [Intersection Observer API](https://developer.mozilla.org/ru/docs/Web/API/Intersection_Observer_API)
 
 ## Планируется
-* Сделать паралакс ([пример](https://htmlacademy.ru/blog/css/parallax))
+* Сделать паралакс ([пример 1](https://htmlacademy.ru/blog/css/parallax), [пример 2](https://github.com/KiaanCastillo/Pure-CSS-Multilayer-Parallax))
 * Сделать минимальную адаптивность
