@@ -13,10 +13,10 @@ $paralax-perspective: 300px;
   scrollbar-width: none;
 }
 
-.parallax__container {
-  position: relative;
-  height: calc(100vh - 410px);
-}
+// .parallax__container {
+//   position: relative;
+//   height: calc(100vh - 410px);
+// }
 
 .parallax__group {
   height: calc(100vh + 410px);
@@ -43,6 +43,7 @@ $paralax-perspective: 300px;
   @include paralax-transform(-220px, 0, -563px);
   z-index: 2;
 }
+
 /* TODO кнопка scroll down не кликабельна */
 .parallax__layer--3 {
   transform: translateY(274px);
@@ -50,11 +51,13 @@ $paralax-perspective: 300px;
 }
 
 .parallax__layer--4 {
-  @include paralax-transform(80px, 0, 7px);
+  @include paralax-transform(80px, 0, -270px);
   z-index: 4;
+  transform-origin: bottom;
 }
 
 .parallax__layer--last {
   @include paralax-transform(80px, 0, 1125px);
   z-index: 9;
+  // transform-origin: bottom;
 }
