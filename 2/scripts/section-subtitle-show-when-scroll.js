@@ -1,1 +1,0 @@
-var s=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&t.target.classList.add("section__subtitle--smooth-show")})}),o=document.querySelectorAll(".section__subtitle");o.forEach(e=>s.observe(e));
